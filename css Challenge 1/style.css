@@ -1,0 +1,41 @@
+body{
+    font-family: sans-serif;
+    text-align: center;
+    border: 5px solid black;
+}
+
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#cost{
+    font-size: 22px;
+    font-weight: bold;
+}
+.shipping{
+    font-weight: lighter;
+    color: #777;
+}
+.more-info:link, .more-info:visited{
+    color:black;
+}
+.more-info:active, .more-info:hover{
+    text-decoration: none;
+}
+.list-style{
+    list-style: none;
+    line-height: 1.5;
+    font-style: italic;
+    
+}
+button{
+    background-color: aquamarine;
+    font-weight: bold;
+}
+button:hover{
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+}
