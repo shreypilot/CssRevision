@@ -41,3 +41,21 @@ article header p{
 #author{
   font-style: italic;
 }
+
+h2{
+  position: relative;
+}
+
+h2::before{
+
+  content: "TOP";
+  background-color:#ffe70e;
+  font-size:16px;
+  font-weight: bold ;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top:-15px;
+  right:-25px;
+
+}
