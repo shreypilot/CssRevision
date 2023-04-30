@@ -7,6 +7,16 @@ h1{
   font-style: italic;
 
 }
+nav{
+  font-size: 20px;
+}
+
+nav a{
+  margin-right: 10px;
+  text-decoration: none;
+  font-weight: 900;
+  color:rgb(42, 175, 175);
+}
 
 h2{
   font-size: 40px;
@@ -58,4 +68,66 @@ h2::before{
   top:-15px;
   right:-25px;
 
+}
+
+.main-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:rgb(42, 175, 175);
+}
+
+.author-box{
+  display: flex;
+  align-items: center;
+}
+
+#author{
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+.related-post{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  
+}
+.related-author{
+  margin-bottom: 0 ;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+}
+.related-link{
+  font-size: 17px;
+  font-weight: bold;
+  font-style: normal;
+  margin-bottom:5px;
+  display: block;
+}
+.related{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 5px solid rgb(22, 112, 112);  
+  border-left: 0px;
+  border-right: 0px;
+  background-color: rgba(240, 229, 229, 0.904);
+}
+
+.row{
+  display: flex;
+  gap: 75px;
+  margin-bottom: 60px;
+}
+aside{
+  flex: 0 0 300px;
+  /*   grow shrink basis */
+  
+}
+article{
+  flex: 1;
 }
