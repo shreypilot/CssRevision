@@ -31,6 +31,12 @@
       .el--8 {
         background-color: crimson;
       }
+      .el--9{
+        background-color: yellow;
+      }
+      .el--10 {
+        background-color: crimson;
+      }
 
       .container--1 {
         /* STARTER */
@@ -40,8 +46,21 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 2fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4,1fr);
+        /* grid-template-rows:300px 200px; */
+        grid-template-rows: 1fr 1fr 1fr;
+        /* grid-gap: 30px ; */
+        /* grid-gap or gap same here */
+        /* gap: 30px; */
+        column-gap: 20px;
+        row-gap: 40px;
       }
-
+      .el--8{
+        grid-column: 2/-2;
+        grid-row: 2;
+      }
       .container--2 {
         /* STARTER */
         font-family: sans-serif;
@@ -53,6 +72,22 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        /* aligning tracks inside container distribute empty space */
+        /* justify-content: space-between; */
+        justify-content: center;
+        align-content: center;
+        gap: 50px;
+
+        /* aligning items inside cells:moving items around inside cells */
+        align-items: center;
+        justify-items: center;
+      }
+      .el--3{
+        align-self: end;
+        justify-self: end;
       }
     </style>
   </head>
@@ -66,6 +101,9 @@
       <div class="el el--6">(6) languages</div>
       <div class="el el--7">(7) to</div>
       <div class="el el--8">(8) learn</div>
+      <div class="el el--9">(1) HTML</div>
+      <div class="el el--10">(2) and</div>
+      
     </div>
 
     <div class="container--2">
